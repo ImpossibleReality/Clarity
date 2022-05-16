@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5e453238c13a42a3448f1effc53c4a7a4cd22c15"
+      }
+    },
+    {
+      "identity" : "masshortcut",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rampatra/MASShortcut",
+      "state" : {
+        "revision" : "883265c7f54368b45b282723ae7c4f2d5e68ab49",
+        "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "swift-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/koher/swift-image",
+      "state" : {
+        "revision" : "c61b8cf4613a7fc80d1c2a84231cef2909e837a1",
+        "version" : "0.7.1"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="swT-en-keL" customClass="ScreenshotEditor" customModule="Clarity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1087" height="475"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="m7G-qI-sbp" customClass="ScreenshotCanvasView" customModule="Clarity" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="1087" height="475"/>
+                    <subviews>
+                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2a7-bx-jc5">
+                            <rect key="frame" x="26" y="406" width="48" height="51"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="NeT-Fd-ec3">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                                <imageReference key="image" image="rectangle.dashed" catalog="system" symbolScale="small"/>
+                            </buttonCell>
+                            <color key="contentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </button>
+                    </subviews>
+                </customView>
+                <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqP-sK-0Z8" customClass="ScreenshotEditorToolbar" customModule="Clarity" customModuleProvider="target">
+                    <rect key="frame" x="144" y="38" width="800" height="75"/>
+                    <subviews>
+                        <box wantsLayer="YES" boxType="custom" borderType="none" cornerRadius="25" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ZVq-73-B5Z">
+                            <rect key="frame" x="0.0" y="0.0" width="800" height="75"/>
+                            <view key="contentView" wantsLayer="YES" id="9ca-S1-q5P">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-6c-Ij3" customClass="ToolbarButton" customModule="Clarity" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="10.5" width="50" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HJ6-EH-pf8"/>
+                                            <constraint firstAttribute="width" constant="50" id="gdL-Gg-e7m"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" controlSize="large" imageScaling="proportionallyUpOrDown" inset="2" id="Ger-eJ-xdy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <imageReference key="image" image="cursorarrow" catalog="system" symbolScale="small"/>
+                                        </buttonCell>
+                                        <color key="contentTintColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="verticalImagePadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="horizontalImagePadding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7YV-6W-4dU" userLabel="Separator">
+                                        <rect key="frame" x="99" y="12" width="1" height="50"/>
+                                        <view key="contentView" id="FSK-T2-Ncc">
+                                            <rect key="frame" x="0.0" y="0.0" width="1" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="FHi-iL-r0d"/>
+                                            <constraint firstAttribute="height" constant="50" id="zt5-Kn-siJ"/>
+                                        </constraints>
+                                        <color key="fillColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </box>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0wc-yg-DOV" customClass="ToolbarButton" customModule="Clarity" customModuleProvider="target">
+                                        <rect key="frame" x="125" y="11.5" width="50.5" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CDc-ah-0Ti"/>
+                                            <constraint firstAttribute="width" constant="50" id="ZKZ-5L-64w"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="overlaps" alignment="center" controlSize="large" imageScaling="proportionallyUpOrDown" inset="2" id="bkr-xM-bAR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <imageReference key="image" image="pencil" catalog="system" symbolScale="small"/>
+                                        </buttonCell>
+                                        <color key="contentTintColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Q5-6c-Ij3" firstAttribute="centerX" secondItem="dA2-pt-rjV" secondAttribute="leading" constant="50" id="G8F-js-NHP"/>
+                                    <constraint firstItem="2Q5-6c-Ij3" firstAttribute="centerY" secondItem="dA2-pt-rjV" secondAttribute="centerY" id="dyT-rY-jgi"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="dA2-pt-rjV"/>
+                                <viewLayoutGuide key="layoutMargins" id="ob5-m8-2Cb"/>
+                            </view>
+                            <constraints>
+                                <constraint firstItem="0wc-yg-DOV" firstAttribute="centerX" secondItem="ZVq-73-B5Z" secondAttribute="leading" constant="150" id="GgO-eb-WOm"/>
+                                <constraint firstItem="0wc-yg-DOV" firstAttribute="centerY" secondItem="ZVq-73-B5Z" secondAttribute="centerY" id="S7M-mW-Obc"/>
+                                <constraint firstAttribute="width" constant="800" id="UHh-O4-DJH"/>
+                                <constraint firstAttribute="height" constant="75" id="d4O-fV-4Wd"/>
+                                <constraint firstItem="7YV-6W-4dU" firstAttribute="centerX" secondItem="ZVq-73-B5Z" secondAttribute="leading" constant="100" id="dXn-pA-m1j"/>
+                                <constraint firstItem="7YV-6W-4dU" firstAttribute="centerY" secondItem="ZVq-73-B5Z" secondAttribute="centerY" id="rd5-kp-Eqz"/>
+                            </constraints>
+                            <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="fillColor" red="1" green="1" blue="1" alpha="0.1803919993290285" colorSpace="custom" customColorSpace="sRGB"/>
+                        </box>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="AXF-gw-3xU"/>
+                        <constraint firstItem="ZVq-73-B5Z" firstAttribute="width" secondItem="eqP-sK-0Z8" secondAttribute="width" id="NGb-ym-Jbv"/>
+                        <constraint firstItem="ZVq-73-B5Z" firstAttribute="centerX" secondItem="eqP-sK-0Z8" secondAttribute="centerX" id="Ozy-PB-uqW"/>
+                        <constraint firstItem="ZVq-73-B5Z" firstAttribute="centerY" secondItem="eqP-sK-0Z8" secondAttribute="centerY" id="YXh-Nl-hnc"/>
+                        <constraint firstAttribute="width" constant="800" id="fJe-wo-rG3"/>
+                        <constraint firstItem="ZVq-73-B5Z" firstAttribute="height" secondItem="eqP-sK-0Z8" secondAttribute="height" id="fdP-Yt-4EB"/>
+                    </constraints>
+                    <backgroundFilters>
+                        <ciFilter name="CIGaussianBlur">
+                            <configuration>
+                                <null key="inputImage"/>
+                                <real key="inputRadius" value="10"/>
+                            </configuration>
+                        </ciFilter>
+                        <ciFilter name="CIWhitePointAdjust">
+                            <configuration>
+                                <ciColor key="inputColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1"/>
+                                <null key="inputImage"/>
+                            </configuration>
+                        </ciFilter>
+                    </backgroundFilters>
+                    <connections>
+                        <outlet property="upConstraint" destination="nog-f3-kYw" id="7A2-Ui-z0x"/>
+                    </connections>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="top" secondItem="swT-en-keL" secondAttribute="top" id="J1D-yb-kew"/>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="width" secondItem="swT-en-keL" secondAttribute="width" id="JrI-f6-4eK"/>
+                <constraint firstItem="eqP-sK-0Z8" firstAttribute="centerX" secondItem="swT-en-keL" secondAttribute="centerX" id="OmR-oG-rRM"/>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="height" secondItem="swT-en-keL" secondAttribute="height" id="Rsk-jx-MWd"/>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="centerX" secondItem="swT-en-keL" secondAttribute="centerX" id="YSc-TF-54u"/>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="leading" secondItem="swT-en-keL" secondAttribute="leading" id="h3V-f0-x3B"/>
+                <constraint firstItem="eqP-sK-0Z8" firstAttribute="centerY" secondItem="swT-en-keL" secondAttribute="bottom" constant="-75" id="nog-f3-kYw"/>
+                <constraint firstItem="m7G-qI-sbp" firstAttribute="centerY" secondItem="swT-en-keL" secondAttribute="centerY" id="qQi-si-ObJ"/>
+            </constraints>
+            <connections>
+                <outlet property="mainCanvas" destination="m7G-qI-sbp" id="YLv-qS-Z63"/>
+                <outlet property="mainToolbar" destination="eqP-sK-0Z8" id="je5-2z-XxS"/>
+                <outlet property="screenshotTypeButton" destination="2a7-bx-jc5" id="lrp-vj-NKC"/>
+            </connections>
+            <point key="canvasLocation" x="-248.5" y="-83.5"/>
+        </customView>
+        <viewController id="n0P-xl-eoN">
+            <connections>
+                <outlet property="view" destination="swT-en-keL" id="Seb-vt-Ay4"/>
+            </connections>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="cursorarrow" catalog="system" width="9" height="13"/>
+        <image name="pencil" catalog="system" width="11" height="10"/>
+        <image name="rectangle.dashed" catalog="system" width="15" height="12"/>
+    </resources>
+</document>
